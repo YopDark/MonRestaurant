@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nous contacter</title>
+    <meta name="description" content="MonRestaurant">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<header>
+    <h1>Nous contacter</h1>
+    <img src="../img/restau.jpg" alt="MonRestaurant" height="589" width="1231"/>
+
+    <nav>
+        <a href="../index.html" title="Accueil">Accueil</a>
+        <a href="menu.html" title="Menu">Menu</a>
+        <a href="contact.html" title="Nous contacter">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Où nous trouver ?</h2>
+    <p>
+        123 rue de la demonstration <br>
+        59000 Lille <br>
+        France
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.0882648323045!2d3.052139929402935!3d50.625477113930145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d59b918c45e7%3A0x6fc85ec738aa6b66!2sRue%20des%20Meuniers%2C%2059000%20Lille!5e0!3m2!1sfr!2sfr!4v1652281048964!5m2!1sfr!2sfr" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<h2>Nous envoyer un formulaire</h2>
+<form action="contact.html">
+    <div>
+        <label for="email">Email <sup>*</sup></label>
+        <input type="email" required id="email" name="email" placeholder="email@email.com">
+    </div>
+
+    <div>
+        <label for="firstname">Nom <sup>*</sup></label>
+        <input type="text" required id="firstname" name="firstname">
+    </div>
+    <div>
+        <label for="message">Votre message <sup>*</sup></label>
+        <textarea required id="message" name="message"></textarea>
+    </div>
+    <button type="submit">Envoyer votre demande</button>
+</form>
+<footer>
+    <address>123 rue de la demonstration</address>
+</footer>
+</body>
+
+</html>
