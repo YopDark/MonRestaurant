@@ -28,6 +28,10 @@ select option{
   color: #000000;
 }
 
+ul {
+list-style: none;
+}
+
 /*=========== HEADER ===========*/
 
 .menu-item:hover{
@@ -388,6 +392,76 @@ select option{
   margin-bottom: 2rem;
 }
 
+/*=========== PAGE RECETTE ===========*/
+ .header-recette{
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.922045), rgba(54, 54, 54, 0.6) 39.24%,
+    rgba(28, 28, 28, 0.6)),
+    url(img/salad-chicken.jpg) center center / cover no-repeat;
+  color: #ffffff;
+}
+
+  .block-ingredients{
+    border: 1px solid #C89446;
+    font-weight: 600;
+    color: #383838;
+    padding: 35px 20px;
+
+  }
+
+.block-ingredients ul{
+  padding: 0;
+  margin: 0;
+}
+
+.block-ingredients li{
+  padding: 5px 0;
+}
+
+.block-ingredients span{
+  width: 35px;
+  text-align: right;
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: 300;
+
+}
+
+.section-overflow{
+  padding: 20px 0;
+}
+
+.block-video{
+  text-align: center;
+}
+
+.pagination{
+  margin: 80px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pagination li{
+  display: inline-block;
+}
+
+.pagination a{
+  border: #C89446 1px solid;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  transition: background .3s;
+  margin: 0 10px;
+}
+
+.pagination .active, .pagination a:hover{
+  background: #C89446;
+}
+
+
+
+
 
 @media screen and (min-width: 600px){
     html{
@@ -538,13 +612,13 @@ select option{
       margin-bottom: 100px;
     }
 
-    .menu-summary-item:nth-child(even){
+  .menu-summary .menu-summary-item:nth-child(even){
       text-align: right;
       padding-left: 0;
       padding-right: 192px;
     }
 
-    .menu-summary-item:nth-child(even) .menu-summary-img{
+  .menu-summary .menu-summary-item:nth-child(even) .menu-summary-img{
       left: auto;
       right: 0;
     }
@@ -650,6 +724,38 @@ select option{
 
   .footer{
     background-image: url(img/splash.png);
+  }
+
+  .block-ingredients{
+    width: 350px;
+    padding: 35px 40px;
+
+  }
+
+  .block-ingredients span{
+    width: 35px;
+    margin-right: 50px;
+
+  }
+
+  .block-ingredients li{
+    padding: 12px 0;
+  }
+
+  .section-overflow{
+    padding: 0;
+    margin: -20px;
+  }
+
+  .recipes-mozaic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .recipes-mozaic .menu-summary-item{
+    width: calc(50% - 25px);
+    margin-bottom: 60px;
   }
 
 }
